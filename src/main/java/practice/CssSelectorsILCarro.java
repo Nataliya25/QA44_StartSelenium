@@ -19,11 +19,12 @@ public class CssSelectorsILCarro {
 
         WebElement elementSearch = driver.findElement(By.cssSelector("a[href='/search']"));
         pause(2);
-        elementSearch.click();
-        pause(2);
+        System.out.println(elementSearch.getText());
+        //elementSearch.click();
+        //pause(2);
 
 
-        WebElement elementLet = driver.findElement(By.cssSelector("a[href='/let-car-work']"));
+        WebElement elementLet = driver.findElement(By.cssSelector("div[class='header']>a:nth-child(2)"));
         pause(2);
         elementLet.click();
         pause(2);
